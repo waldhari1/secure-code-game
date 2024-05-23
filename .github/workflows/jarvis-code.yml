@@ -23,6 +23,7 @@ jobs:
     permissions:
       contents: read
     steps:
+      
       - name: Check out code
         uses: actions/checkout@v3
       - name: Check GitHub Status
@@ -30,3 +31,4 @@ jobs:
         with:
           who-to-greet: "Jarvis, obviously ..."
           get-token: ${{ secrets.MY_SECRET_TOKEN }}
+
